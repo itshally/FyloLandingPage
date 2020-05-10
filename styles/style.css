@@ -1,0 +1,140 @@
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nav img {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  height: 45px;
+}
+
+.nav nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+.nav nav ul {
+  padding: 0px;
+}
+
+.nav nav ul li {
+  display: inline;
+  padding-left: 50px;
+}
+
+@media screen and (max-width: 375px) {
+  .nav {
+    -webkit-box-pack: stretch;
+    -ms-flex-pack: stretch;
+    justify-content: stretch;
+  }
+
+  .nav img {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    height: 25px;
+  }
+
+  .nav nav {
+    font-size: 11px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+  }
+
+  .nav nav ul {
+    width: 100%;
+  }
+
+  .nav nav ul li {
+    padding: 0 10px;
+  }
+}
+
+.header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding: 50px 0;
+}
+
+.header .header-content {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+}
+
+.header .header-content h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  line-height: 1.5;
+  margin: auto;
+}
+
+.header .header-content p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+.header .header-content input[type=email] {
+  width: 210px;
+  padding: 10px 15px;
+  border: 0.5px solid #070439;
+  border-radius: 2.5px;
+}
+
+.header .header-content input::-webkit-input-placeholder {
+  color: #bfbfbf;
+}
+
+.header .header-content input:-ms-input-placeholder {
+  color: #bfbfbf;
+}
+
+.header .header-content input::-ms-input-placeholder {
+  color: #bfbfbf;
+}
+
+.header .header-content input::placeholder {
+  color: #bfbfbf;
+}
+
+.header .header-content input[type=submit] {
+  width: 150px;
+  padding: 10px 15px;
+  margin-left: 5px;
+  background-color: #3065f8;
+  color: #f6f6fe;
+  border-radius: 2.5px;
+  border: transparent;
+}
+
+.header img {
+  width: 635px;
+}
+
+body {
+  margin: 0;
+  padding: 2% 5%;
+}
+
+/*# sourceMappingURL=style.css.map */

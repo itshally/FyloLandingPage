@@ -1,0 +1,58 @@
+@import './variables';
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    img {
+        align-self: center;
+        height: 45px;
+    }
+
+    nav {
+        display: flex;
+        font-family: $bodyFontFamily;
+        font-size: 16px;
+
+        ul {
+            padding: 0px;
+
+            li {
+                display: inline;
+                padding-left: 50px;
+            }
+        }
+    }
+}
+
+// desktop and mobile responsiveness
+@media screen and (max-width: 1440px) {}
+
+@media screen and (max-width: 375px) {
+
+    .nav {
+        justify-content: stretch;
+
+        img {
+            align-self: center;
+            height: 25px;
+        }
+
+        nav {
+            // width: 100%;
+            font-size: 11px;
+            display: flex;
+            // flex: auto;
+            justify-content: flex-end;
+
+            ul {
+                width: 100%;
+
+                li {
+                    padding: 0 10px;
+                }
+            }
+        }
+    }
+}
