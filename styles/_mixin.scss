@@ -1,0 +1,11 @@
+@import './variables';
+
+@mixin fontStyle($family, $weight) {
+    font-family: $family;
+    font-weight: $weight;
+}
+
+@mixin contentMargin {
+    width: auto;
+    padding: 2% 5%;
+}
