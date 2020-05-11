@@ -1,17 +1,18 @@
 .nav {
+  width: auto;
+  padding: 2% 5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  width: 100%;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .nav img {
   -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   height: 45px;
 }
 
@@ -35,52 +36,52 @@
 @media screen and (max-width: 375px) {
   .nav {
     -webkit-box-pack: stretch;
-    -ms-flex-pack: stretch;
-    justify-content: stretch;
+        -ms-flex-pack: stretch;
+            justify-content: stretch;
   }
-
   .nav img {
     -ms-flex-item-align: center;
-    -ms-grid-row-align: center;
-    align-self: center;
+        -ms-grid-row-align: center;
+        align-self: center;
     height: 25px;
   }
-
   .nav nav {
     font-size: 11px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
-
   .nav nav ul {
     width: 100%;
   }
-
   .nav nav ul li {
     padding: 0 10px;
   }
 }
 
 .header {
-  width: 100%;
+  width: auto;
+  padding: 2% 5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  padding: 50px 0;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .header .header-content {
   -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-right: 10px;
 }
 
 .header .header-content h1 {
@@ -128,13 +129,116 @@
   border: transparent;
 }
 
-.header img {
-  width: 635px;
+.section {
+  margin-top: 5%;
+}
+
+.section .desktop-curve {
+  height: 100%;
+  width: 100%;
+  margin: -5px 0;
+}
+
+.section .contents {
+  width: auto;
+  padding: 2% 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #f6f6fe;
+  padding-bottom: 5%;
+}
+
+.section .contents .section-contents {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.section .contents .section-contents h2 {
+  font-size: 35px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+
+.section .contents .section-contents p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+.section .contents .section-contents .link {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  border-bottom: 1px solid #3c9f8f;
+}
+
+.section .contents .section-contents .link a {
+  color: #3c9f8f;
+  text-decoration: none;
+}
+
+.section .contents .section-contents .testimonial {
+  width: 40%;
+  padding: 2.5%;
+  margin-top: 5%;
+  background-color: #ffffff;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 15px -10px #585989;
+  box-shadow: 0px 0px 15px -10px #585989;
+}
+
+.section .contents .section-contents .testimonial p {
+  font-size: 11px;
+  line-height: 2;
+}
+
+.section .contents .section-contents .testimonial .author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section .contents .section-contents .testimonial .author img {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+}
+
+.section .contents .section-contents .testimonial .author .name {
+  padding-left: 5px;
+}
+
+.section .contents .section-contents .testimonial .author .name p {
+  line-height: 0.2;
+}
+
+.section .contents .section-contents .testimonial .author .name p:first-child {
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.section .contents .section-contents .testimonial .author .name p:nth-child(2) {
+  font-size: 8px;
+}
+
+.section .contents .illustrator2 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 5%;
+  width: 500px;
 }
 
 body {
   margin: 0;
-  padding: 2% 5%;
 }
 
+.illustrators {
+  width: 600px;
+}
 /*# sourceMappingURL=style.css.map */

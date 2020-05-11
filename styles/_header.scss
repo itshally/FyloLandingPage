@@ -1,19 +1,15 @@
 @import './variables';
-
-@mixin fontStyle($family, $weight) {
-    font-family: $family;
-    font-weight: $weight;
-}
+@import './mixin';
 
 .header {
-    width: 100%;
+    @include contentMargin;
     display: flex;
     flex-direction: row;
-    padding: 50px 0;
+    justify-content: space-between;
 
     .header-content {
         align-self: center;
-
+        padding-right: 10px;
         h1 {
             @include fontStyle($headingFontFamily, bold);
             line-height: 1.5;
@@ -44,9 +40,5 @@
             border-radius: 2.5px;
             border: transparent;
         }
-    }
-
-    img {
-        width: 635px;
     }
 }

@@ -1,9 +1,10 @@
 @import './variables';
+@import './mixin';
 
 .nav {
+    @include contentMargin;
     display: flex;
     justify-content: space-between;
-    width: 100%;
 
     img {
         align-self: center;

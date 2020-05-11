@@ -1,10 +1,13 @@
 @import './_variables';
 @import './_nav';
-@import './header';
+@import './_header';
+@import './_section';
 
 body {
     margin: 0;
-    padding: 2% 5%;
+}
+.illustrators {
+    width: 600px;
 }
 
 @media screen and (max-width: 1440px) {}
