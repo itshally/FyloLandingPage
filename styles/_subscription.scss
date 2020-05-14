@@ -1,0 +1,46 @@
+@import './variables';
+@import './mixin';
+
+.subscription{
+    background-color: $desaturatedBlue;
+    color: $lightGrayishBlue;
+    display: flex;
+
+    div{
+        width: 50%;
+        align-self: center;
+        @include contentMargin;
+
+        h3{
+            font-size: 24px;
+            @include fontStyle($headingFontFamily, bold);
+        }
+        
+        p{
+            @include sectionParagraph;
+        }
+    }
+
+    .right{
+        input[type=email] {
+            width: 210px;
+            padding: 10px 15px;
+            border: 0.5px solid $veryDarkBlue;
+            border-radius: 2.5px;
+        }
+
+        input::placeholder {
+            color: $lightGray;
+        }
+
+        input[type=submit] {
+            width: 150px;
+            padding: 10px 15px;
+            margin-left: 5px;
+            background-color: $brightBlue;
+            color: $lightGrayishBlue;
+            border-radius: 2.5px;
+            border: transparent;
+        }
+    }
+}
