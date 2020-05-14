@@ -234,6 +234,67 @@
   width: 500px;
 }
 
+.subscription {
+  background-color: #585989;
+  color: #f6f6fe;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.subscription div {
+  width: 50%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: auto;
+  padding: 2% 5%;
+}
+
+.subscription div h3 {
+  font-size: 24px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+
+.subscription div p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+.subscription .right input[type=email] {
+  width: 210px;
+  padding: 10px 15px;
+  border: 0.5px solid #070439;
+  border-radius: 2.5px;
+}
+
+.subscription .right input::-webkit-input-placeholder {
+  color: #bfbfbf;
+}
+
+.subscription .right input:-ms-input-placeholder {
+  color: #bfbfbf;
+}
+
+.subscription .right input::-ms-input-placeholder {
+  color: #bfbfbf;
+}
+
+.subscription .right input::placeholder {
+  color: #bfbfbf;
+}
+
+.subscription .right input[type=submit] {
+  width: 150px;
+  padding: 10px 15px;
+  margin-left: 5px;
+  background-color: #3065f8;
+  color: #f6f6fe;
+  border-radius: 2.5px;
+  border: transparent;
+}
+
 body {
   margin: 0;
 }
