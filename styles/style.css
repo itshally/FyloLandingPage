@@ -242,53 +242,66 @@
   display: flex;
 }
 
-.subscription div {
-  width: 50%;
+.subscription .left {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
   width: auto;
   padding: 2% 5%;
+  width: 50%;
 }
 
-.subscription div h3 {
+.subscription .left h3 {
   font-size: 24px;
   font-family: "Raleway", sans-serif;
   font-weight: bold;
 }
 
-.subscription div p {
+.subscription .left p {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
 }
 
+.subscription .right {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: auto;
+  padding: 2% 5%;
+  width: 50%;
+}
+
 .subscription .right input[type=email] {
-  width: 210px;
-  padding: 10px 15px;
+  width: 100%;
+  padding: 1em 0;
   border: 0.5px solid #070439;
   border-radius: 2.5px;
+  margin-bottom: 10px;
 }
 
 .subscription .right input::-webkit-input-placeholder {
   color: #bfbfbf;
+  padding: 1em;
 }
 
 .subscription .right input:-ms-input-placeholder {
   color: #bfbfbf;
+  padding: 1em;
 }
 
 .subscription .right input::-ms-input-placeholder {
   color: #bfbfbf;
+  padding: 1em;
 }
 
 .subscription .right input::placeholder {
   color: #bfbfbf;
+  padding: 1em;
 }
 
 .subscription .right input[type=submit] {
-  width: 150px;
-  padding: 10px 15px;
-  margin-left: 5px;
+  width: 40%;
+  padding: 1em;
   background-color: #3065f8;
   color: #f6f6fe;
   border-radius: 2.5px;

@@ -9,3 +9,7 @@
     width: auto;
     padding: 2% 5%;
 }
+
+@mixin sectionParagraph{
+    @include fontStyle($bodyFontFamily, $fontWeight400);
+}

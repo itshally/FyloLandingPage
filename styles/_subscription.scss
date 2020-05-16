@@ -6,11 +6,11 @@
     color: $lightGrayishBlue;
     display: flex;
 
-    div{
-        width: 50%;
+    .left {
         align-self: center;
         @include contentMargin;
-
+        width: 50%;
+        
         h3{
             font-size: 24px;
             @include fontStyle($headingFontFamily, bold);
@@ -22,21 +22,26 @@
     }
 
     .right{
+        align-self: center;
+        @include contentMargin;
+        width: 50%;
+
         input[type=email] {
-            width: 210px;
-            padding: 10px 15px;
+            width: 100%;
+            padding: 1em 0;
             border: 0.5px solid $veryDarkBlue;
             border-radius: 2.5px;
+            margin-bottom: 10px;
         }
 
         input::placeholder {
             color: $lightGray;
+            padding: 1em;
         }
 
         input[type=submit] {
-            width: 150px;
-            padding: 10px 15px;
-            margin-left: 5px;
+            width: 40%;
+            padding: 1em;
             background-color: $brightBlue;
             color: $lightGrayishBlue;
             border-radius: 2.5px;

@@ -24,7 +24,7 @@
                 @include fontStyle($headingFontFamily, bold);
             }
             p{
-                @include fontStyle($bodyFontFamily, $fontWeight400);
+                @include sectionParagraph;
             }
             .link{   
                 @include fontStyle($bodyFontFamily, $fontWeight400);
