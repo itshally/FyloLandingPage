@@ -34,8 +34,11 @@
   padding-left: 50px;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 375px), (max-width: 640px) {
   .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: stretch;
         -ms-flex-pack: stretch;
             justify-content: stretch;
@@ -47,10 +50,17 @@
     height: 25px;
   }
   .nav nav {
+    width: 100%;
     font-size: 11px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    -ms-flex-item-align: center;
+        align-self: center;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
@@ -173,7 +183,7 @@
         -ms-flex-order: 1;
             order: 1;
     width: 100%;
-    max-width: 50vmax;
+    max-width: 45vmax;
     margin: 10% auto;
   }
   .header .header-left {
@@ -184,20 +194,20 @@
         -ms-flex-order: 2;
             order: 2;
     width: auto;
-    max-width: 50vmax;
     text-align: center;
     margin: auto;
     padding-right: 0;
+    margin-bottom: 25%;
   }
   .header .header-left h1 {
     font-size: 18pt;
   }
   .header .header-left p {
-    font-size: 11pt;
     line-height: 1.5;
   }
   .header .header-left .header-email {
-    width: auto;
+    width: 100%;
+    margin: auto;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-flow: column;
@@ -245,37 +255,43 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   background-color: #f6f6fe;
-  padding-bottom: 5%;
+  padding-bottom: 10%;
 }
 
-.section .contents .section-contents {
-  -ms-flex-item-align: start;
-      align-self: flex-start;
+.section .contents .section-left {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 50%;
+  max-width: 50vmax;
+  padding-right: 5%;
 }
 
-.section .contents .section-contents h2 {
-  font-size: 35px;
+.section .contents .section-left h2 {
   font-family: "Raleway", sans-serif;
-  font-weight: bold;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.5;
+  margin: auto;
 }
 
-.section .contents .section-contents p {
+.section .contents .section-left p {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
 }
 
-.section .contents .section-contents .link {
+.section .contents .section-left .link {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   border-bottom: 1px solid #3c9f8f;
 }
 
-.section .contents .section-contents .link a {
+.section .contents .section-left .link a {
   color: #3c9f8f;
   text-decoration: none;
 }
 
-.section .contents .section-contents .testimonial {
+.section .contents .section-left .testimonial {
   width: 40%;
   padding: 2.5%;
   margin-top: 5%;
@@ -285,50 +301,53 @@
   box-shadow: 0px 0px 15px -10px #585989;
 }
 
-.section .contents .section-contents .testimonial p {
+.section .contents .section-left .testimonial p {
   font-size: 11px;
   line-height: 2;
 }
 
-.section .contents .section-contents .testimonial .author {
+.section .contents .section-left .testimonial .author {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.section .contents .section-contents .testimonial .author img {
+.section .contents .section-left .testimonial .author img {
   height: 32px;
   width: 32px;
   border-radius: 50%;
 }
 
-.section .contents .section-contents .testimonial .author .name {
+.section .contents .section-left .testimonial .author .name {
   padding-left: 5px;
 }
 
-.section .contents .section-contents .testimonial .author .name p {
+.section .contents .section-left .testimonial .author .name p {
   line-height: 0.2;
 }
 
-.section .contents .section-contents .testimonial .author .name p:first-child {
+.section .contents .section-left .testimonial .author .name p:first-child {
   font-weight: bold;
   font-size: 10px;
 }
 
-.section .contents .section-contents .testimonial .author .name p:nth-child(2) {
+.section .contents .section-left .testimonial .author .name p:nth-child(2) {
   font-size: 8px;
 }
 
-.section .contents .illustrator2 {
+.section .contents .section-right {
+  width: 50%;
+  max-width: 45vmax;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section .contents .section-right .illustrator2 {
+  width: 100%;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-left: 5%;
-  width: 500px;
-  display: none;
 }
 
 .subscription {
