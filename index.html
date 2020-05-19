@@ -14,7 +14,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="./styles/style.css">
-
+  <script src="https://kit.fontawesome.com/39d0e3f084.js" crossorigin="anonymous"></script>
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution {
@@ -44,7 +44,6 @@
 
   <!-- header part -->
   <div class="header">
-
     <div class="header-left">
       <h1>All your files in one secure location, accessible anywhere.</h1>
       <p>
@@ -54,19 +53,14 @@
       </p>
 
       <div class="header-email">
-        <input type="email" name="email" id="" placeholder="Enter your email...">
+        <input type="email" name="email" placeholder="Enter your email...">
         <input type="submit" value="Get Started">
       </div>
     </div>
 
     <div class="header-right">
-      <img src="./images/illustration-1.svg" class="header-illustrator" alt="">
+      <img src="./images/illustration-1.svg" class="illustrators" alt="">
     </div>
-
-    <div class="header-content">
-      
-    </div>
-    
   </div>
 
   <!-- section one -->
@@ -76,7 +70,7 @@
 
     <!-- contents -->
     <div class="contents">
-      <div class="section-contents">
+      <div class="section-left">
         <h2>Stay productive, wherever you are</h2>
         <p>
           Never let location be an issue when accessing your files. Fylo has you
@@ -103,11 +97,12 @@
               <p>Founder & CEO, Huddle</p>
             </div>
           </div>
-
         </div>
       </div>
 
-      <img src="./images/illustration-2.svg" class="illustrator2" alt="">
+      <div class="section-right">
+        <img src="./images/illustration-2.svg" class="illustrators" alt="">
+      </div>
     </div>
   </div>
 
@@ -122,30 +117,44 @@
     </div>
 
     <div class="right">
-      <input type="email" name="" id="" placeholder="email@example.com">
+      <input type="email" name="email" placeholder="email@example.com">
       <input type="submit" value="Get Started For Free">
     </div>
   </div>
 
-  <!-- 
-  Phone: +1-543-123-4567
-  example@fylo.com
-
-  About Us
-  Jobs
-  Press
-  Blog
-
-  Contact Us
-  Terms
-  Privacy -->
-
-  <!-- <footer>
+  <!-- footer section -->
+  <footer class="footer">
+    <div class="footer-logo">
+      <img src="./images/logo.svg" alt="">
+    </div>
+    <div class="footer-contents">
+      <div class="col-1">
+        <img src="./images/icon-phone.svg" alt=""><span>Phone: +1-543-123-4567 </span><br>
+        <img src="./images/icon-email.svg" alt=""><span>example@fylo.com</span>
+      </div>
+      <div class="col-2">
+        <p>About Us</p>
+        <p>Jobs</p>
+        <p>Press</p>
+        <p>Blog</p>
+      </div>
+      <div class="col-3">
+        <p>Contact Us</p>
+        <p>Terms</p>
+        <p>Privacy</p>
+      </div>
+      <div class="col-4">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+      </div>
+    </div>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="#">Your Name Here</a>.
     </p>
-  </footer> -->
+  </footer>
+
 </body>
 
 </html>
