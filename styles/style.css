@@ -161,7 +161,7 @@
   display: flex;
 }
 
-.header .header-right .header-illustrator {
+.header .header-right .illustrators {
   width: 100%;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -292,8 +292,9 @@
 }
 
 .section .contents .section-left .testimonial {
-  width: 40%;
-  padding: 2.5%;
+  width: 42%;
+  max-width: 40vmax;
+  padding: 3.5% 5%;
   margin-top: 5%;
   background-color: #ffffff;
   border-radius: 5px;
@@ -304,12 +305,14 @@
 .section .contents .section-left .testimonial p {
   font-size: 11px;
   line-height: 2;
+  margin: 0;
 }
 
 .section .contents .section-left .testimonial .author {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 10px;
 }
 
 .section .contents .section-left .testimonial .author img {
@@ -319,11 +322,12 @@
 }
 
 .section .contents .section-left .testimonial .author .name {
+  margin: auto 0;
   padding-left: 5px;
 }
 
 .section .contents .section-left .testimonial .author .name p {
-  line-height: 0.2;
+  line-height: 1.5;
 }
 
 .section .contents .section-left .testimonial .author .name p:first-child {
@@ -343,7 +347,7 @@
   display: flex;
 }
 
-.section .contents .section-right .illustrator2 {
+.section .contents .section-right .illustrators {
   width: 100%;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -356,6 +360,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 2% 0;
 }
 
 .subscription .left {
@@ -368,6 +373,7 @@
 }
 
 .subscription .left h3 {
+  letter-spacing: 1px;
   font-size: 24px;
   font-family: "Raleway", sans-serif;
   font-weight: bold;
@@ -376,6 +382,7 @@
 .subscription .left p {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
+  line-height: 1.5;
 }
 
 .subscription .right {
@@ -422,6 +429,48 @@
   color: #f6f6fe;
   border-radius: 2.5px;
   border: transparent;
+}
+
+.footer {
+  width: auto;
+  padding: 2% 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #070439;
+  color: #f6f6fe;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+}
+
+.footer .footer-logo img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  height: 40px;
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+}
+
+.footer .footer-contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 body {
