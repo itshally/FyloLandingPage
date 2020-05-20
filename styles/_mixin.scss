@@ -13,3 +13,14 @@
 @mixin sectionParagraph{
     @include fontStyle($bodyFontFamily, $fontWeight400);
 }
+
+@mixin illustratorStyle {
+    width: 50%;
+    max-width: 45vmax;
+    display: flex;
+
+    .illustrators{
+        width: 100%;
+        align-self: center;
+    }
+}
