@@ -1,6 +1,5 @@
 @import './variables';
 @import './mixin';
-
 .section{
     margin-top: 5%;
     .desktop-curve{
@@ -14,17 +13,22 @@
         display: flex;
         justify-content: space-between;
         background-color: $lightGrayishBlue;
-        padding-bottom: 5%;
+        padding-bottom: 10%;
         
-        .section-contents{
-            align-self: flex-start;
+        .section-left{
+            align-self: center;
+            width: 50%;
+            max-width: 50vmax;
+            padding-right: 5%;
 
             h2{
-                font-size: 35px;
-                @include fontStyle($headingFontFamily, bold);
+                @include fontStyle($headingFontFamily, $fontWeight700);
+                font-size: 32px;
+                line-height: 1.5;
+                margin: auto;
             }
             p{
-                @include sectionParagraph;
+                @include fontStyle($bodyFontFamily, $fontWeight400);
             }
             .link{   
                 @include fontStyle($bodyFontFamily, $fontWeight400);
@@ -36,8 +40,9 @@
             }
         
             .testimonial{
-                width: 40%;
-                padding: 2.5%;
+                width: 42%;
+                max-width: 40vmax;
+                padding: 3.5% 5%;
                 margin-top: 5%;
                 background-color:#ffffff;
                 border-radius: 5px;
@@ -48,18 +53,21 @@
                 p{
                     font-size: 11px;
                     line-height: 2;
+                    margin: 0;
                 }
                 .author{
                     display: flex;
+                    padding-top: 10px;
                     img{
                         height: 32px;
                         width: 32px;
                         border-radius: 50%;
                     }
                     .name{
+                        margin: auto 0;
                         padding-left: 5px;
                         p{
-                            line-height: 0.2;
+                            line-height: 1.5;
                         }
                         p:first-child{
                             font-weight: bold;
@@ -74,13 +82,13 @@
             }
         }
         
-        .illustrator2{
-            align-self: center;
-            justify-content: center;
-            // padding-top: 3.5%;
-            padding-left: 5%;
-            width: 500px;
+        .section-right{
+            @include illustratorStyle;
         }
     }
     
+}
+
+@media screen and (max-width: 375px), (max-width: 640px) {
+
 }

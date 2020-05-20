@@ -53,14 +53,7 @@
     }
 
     .header-right{
-        width: 50%;
-        max-width: 45vmax;
-        display: flex;
-
-        .header-illustrator{
-            width: 100%;
-            align-self: center;
-        }
+        @include illustratorStyle;
     }
 }
 
@@ -77,7 +70,7 @@
             flex: 1;
             order: 1;
             width: 100%;
-            max-width: 50vmax;
+            max-width: 45vmax;
             margin: 10% auto;
         }
 
@@ -85,20 +78,21 @@
             flex: 2;
             order: 2;
             width: auto;
-            max-width: 50vmax;
             text-align: center;
             margin: auto;
             padding-right: 0;
+            margin-bottom: 25%;
+
             h1{
                 font-size: 18pt;
             }
             p{
-                font-size: 11pt;
                 line-height: 1.5;
             }
 
             .header-email{
-                width: auto;
+                width: 100%;
+                margin: auto;
                 flex-flow: column;
 
                 input[type=email] {
