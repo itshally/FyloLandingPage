@@ -5,6 +5,7 @@
     background-color: $desaturatedBlue;
     color: $lightGrayishBlue;
     display: flex;
+    padding: 2% 0;
 
     .left {
         align-self: center;
@@ -12,12 +13,14 @@
         width: 50%;
         
         h3{
+            letter-spacing: 1px;
             font-size: 24px;
             @include fontStyle($headingFontFamily, bold);
         }
         
         p{
             @include sectionParagraph;
+            line-height: 1.5;
         }
     }
 
@@ -25,7 +28,7 @@
         align-self: center;
         @include contentMargin;
         width: 50%;
-
+        
         input[type=email] {
             width: 100%;
             padding: 1em 0;

@@ -3,12 +3,13 @@
 
 .nav {
     @include contentMargin;
+    margin-bottom: 0%;
     display: flex;
     justify-content: space-between;
 
     img {
         align-self: center;
-        height: 45px;
+        height: 40px;
     }
 
     nav {
@@ -30,9 +31,10 @@
 // desktop and mobile responsiveness
 @media screen and (max-width: 1440px) {}
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 375px), (max-width: 640px) {
 
     .nav {
+        display: flex;
         justify-content: stretch;
 
         img {
@@ -41,10 +43,11 @@
         }
 
         nav {
-            // width: 100%;
+            width: 100%;
             font-size: 11px;
             display: flex;
-            // flex: auto;
+            flex-flow: row;
+            align-self: center;
             justify-content: flex-end;
 
             ul {
