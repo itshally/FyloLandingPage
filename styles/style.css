@@ -434,6 +434,7 @@
 .footer {
   width: auto;
   padding: 2% 5%;
+  padding-top: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -471,6 +472,24 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 85%;
+  margin-left: 0;
+}
+
+.footer .footer-contents .col-1 {
+  line-height: 35px;
+  margin: 20px 0;
+}
+
+.footer .footer-contents .col-1 img {
+  margin-right: 15px;
+}
+
+.footer .footer-contents .fab {
+  padding: 8px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin: 5px;
 }
 
 body {
