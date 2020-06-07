@@ -52,3 +52,34 @@
         }
     }
 }
+
+@media screen and (max-width: 375px), (max-width: 640px) {
+    .subscription{
+        flex-flow: column;
+        text-align: center;
+
+        .left, .right{
+            width: 100%;
+            max-width: 45vmax;
+        }
+
+        .left{
+            margin-top: 10%;
+
+            h3{
+                font-size: 12pt;
+            }
+        }
+        .right{
+            margin-bottom: 10%;
+
+            p {
+                line-height: 1.5;
+            }
+
+            input[type=submit] {
+                width: 100%;
+            }
+        }
+    }
+}
