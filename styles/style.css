@@ -568,6 +568,23 @@
   margin: 5px;
 }
 
+@media screen and (max-width: 375px), (max-width: 640px) {
+  .footer {
+    width: auto;
+    padding: 10%;
+  }
+  .footer .footer-contents {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .footer .footer-contents .col-4 {
+    margin: auto;
+  }
+}
+
 body {
   width: 100%;
   max-width: 1440px;

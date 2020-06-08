@@ -42,3 +42,21 @@
         }
     }
 }
+
+@media screen and (max-width: 375px), (max-width: 640px) {
+    .footer{
+        width: auto;
+        padding: 10%;
+        .footer-img{
+        }
+
+        .footer-contents{
+            width: 100%;
+            flex-flow: column;
+
+            .col-4{
+                margin: auto;
+            }
+        }
+    }
+}
