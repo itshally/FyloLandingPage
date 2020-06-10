@@ -566,6 +566,18 @@
   margin: 5px;
 }
 
+.footer .attribution {
+  padding-top: 2em;
+  font-size: 10pt;
+}
+
+.footer .attribution a {
+  text-decoration: none;
+  color: #f6f6fe;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
 @media screen and (max-width: 375px), (max-width: 640px) {
   .footer {
     width: auto;
