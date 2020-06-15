@@ -5,16 +5,16 @@
     background-color: $desaturatedBlue;
     color: $lightGrayishBlue;
     display: flex;
-    padding: 2% 0;
+    @include contentMargin;
 
     .left {
         align-self: center;
-        @include contentMargin;
         width: 50%;
+        max-width: 50vmax;
         
         h3{
             letter-spacing: 1px;
-            font-size: 24px;
+            font-size: 32px;
             @include fontStyle($headingFontFamily, bold);
         }
         
@@ -28,11 +28,13 @@
         align-self: center;
         @include contentMargin;
         width: 50%;
+        max-width: 50vmax;
         
         input[type=email] {
             width: 100%;
-            padding: 1em 0;
-            border: 0.5px solid $veryDarkBlue;
+            max-width: 50vmax;
+            padding: 15px 5px;
+            border: 1px solid $veryDarkBlue;
             border-radius: 2.5px;
             margin-bottom: 10px;
         }

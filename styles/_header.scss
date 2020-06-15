@@ -5,17 +5,21 @@
     @include contentMargin;
     display: flex;
     justify-content: space-between;
+    width: auto;
+    margin: auto;
+    max-width: 1440px;
 
     .header-left {
         align-self: center;
-        width: 45%;
-        max-width: 45vmax;
-        padding-right: 5%;
+        width: 50%;
+        max-width: 50vmax;
 
         h1 {
             @include fontStyle($headingFontFamily, $fontWeight700);
             line-height: 1.5;
             margin: auto;
+            font-size: 2.5em;
+            color: $veryDarkBlue;
         }
 
         p {

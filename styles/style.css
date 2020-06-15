@@ -1,20 +1,23 @@
 .nav {
   width: auto;
-  padding: 2% 5%;
-  margin-bottom: 0%;
+  padding: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: auto;
+  margin-bottom: 0%;
+  margin: auto;
+  max-width: 1440px;
 }
 
 .nav img {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  height: 40px;
+  height: 50px;
 }
 
 .nav nav {
@@ -73,22 +76,24 @@
 
 .header {
   width: auto;
-  padding: 2% 5%;
+  padding: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: auto;
+  margin: auto;
+  max-width: 1440px;
 }
 
 .header .header-left {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  width: 45%;
-  max-width: 45vmax;
-  padding-right: 5%;
+  width: 50%;
+  max-width: 50vmax;
 }
 
 .header .header-left h1 {
@@ -96,6 +101,8 @@
   font-weight: 700;
   line-height: 1.5;
   margin: auto;
+  font-size: 2.5em;
+  color: #070439;
 }
 
 .header .header-left p {
@@ -152,7 +159,7 @@
 }
 
 .header .header-right {
-  width: 50%;
+  width: 35em;
   max-width: 45vmax;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -161,6 +168,7 @@
 
 .header .header-right .illustrators {
   width: 100%;
+  max-width: 50vmax;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -233,34 +241,38 @@
   }
 }
 
-.section {
-  margin-top: 5%;
-}
-
-.section .desktop-curve {
+.desktop-curve {
   height: 100%;
   width: 100%;
-  margin: -5px 0;
+  margin: 5% 0;
+}
+
+.section {
+  width: 100%;
+  margin-top: -6%;
+  background-color: #f6f6fe;
 }
 
 .section .contents {
   width: auto;
-  padding: 2% 5%;
+  padding: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: #f6f6fe;
   padding-bottom: 10%;
+  width: auto;
+  margin: auto;
+  max-width: 1440px;
 }
 
 .section .contents .section-left {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  width: 50%;
+  width: auto;
   max-width: 50vmax;
   padding-right: 5%;
 }
@@ -268,7 +280,7 @@
 .section .contents .section-left h2 {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 35px;
   line-height: 1.5;
   margin: auto;
 }
@@ -338,7 +350,7 @@
 }
 
 .section .contents .section-right {
-  width: 50%;
+  width: 35em;
   max-width: 45vmax;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -347,6 +359,7 @@
 
 .section .contents .section-right .illustrators {
   width: 100%;
+  max-width: 50vmax;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -405,21 +418,21 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 2% 0;
+  width: auto;
+  padding: 5%;
 }
 
 .subscription .left {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  width: auto;
-  padding: 2% 5%;
   width: 50%;
+  max-width: 50vmax;
 }
 
 .subscription .left h3 {
   letter-spacing: 1px;
-  font-size: 24px;
+  font-size: 32px;
   font-family: "Raleway", sans-serif;
   font-weight: bold;
 }
@@ -435,14 +448,16 @@
       -ms-grid-row-align: center;
       align-self: center;
   width: auto;
-  padding: 2% 5%;
+  padding: 5%;
   width: 50%;
+  max-width: 50vmax;
 }
 
 .subscription .right input[type=email] {
   width: 100%;
-  padding: 1em 0;
-  border: 0.5px solid #070439;
+  max-width: 50vmax;
+  padding: 15px 5px;
+  border: 1px solid #070439;
   border-radius: 2.5px;
   margin-bottom: 10px;
 }
@@ -507,7 +522,7 @@
 
 .footer {
   width: auto;
-  padding: 2% 5%;
+  padding: 5%;
   padding-top: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -597,7 +612,6 @@
 
 body {
   width: 100%;
-  max-width: 1440px;
   margin: 0 auto;
   padding: 0;
 }

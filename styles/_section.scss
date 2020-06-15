@@ -1,29 +1,34 @@
 @import './variables';
 @import './mixin';
+.desktop-curve{
+    height: 100%;
+    width: 100%;
+    margin: 5% 0;
+}
+
 .section{
-    margin-top: 5%;
-    .desktop-curve{
-        height: 100%;
-        width: 100%;
-        margin: -5px 0;
-    }
+    width: 100%;
+    margin-top: -6%;
+    background-color: $lightGrayishBlue;
 
     .contents{
         @include contentMargin;
         display: flex;
         justify-content: space-between;
-        background-color: $lightGrayishBlue;
         padding-bottom: 10%;
+        width: auto;
+        margin: auto;
+        max-width: 1440px;
         
         .section-left{
             align-self: center;
-            width: 50%;
+            width: auto;
             max-width: 50vmax;
             padding-right: 5%;
 
             h2{
                 @include fontStyle($headingFontFamily, $fontWeight700);
-                font-size: 32px;
+                font-size: 35px;
                 line-height: 1.5;
                 margin: auto;
             }
@@ -84,6 +89,7 @@
         
         .section-right{
             @include illustratorStyle;
+            // max-width: 40vmax;
         }
     }
     
