@@ -7,7 +7,7 @@
 
 @mixin contentMargin {
     width: auto;
-    padding: 2% 5%;
+    padding: 5%;
 }
 
 @mixin sectionParagraph{
@@ -15,12 +15,13 @@
 }
 
 @mixin illustratorStyle {
-    width: 50%;
+    width: 35em;
     max-width: 45vmax;
     display: flex;
-
+    
     .illustrators{
         width: 100%;
+        max-width: 50vmax;
         align-self: center;
     }
 }
