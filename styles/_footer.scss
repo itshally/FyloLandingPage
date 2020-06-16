@@ -1,70 +1,76 @@
 @import './variables';
 @import './mixin';
 
-.footer{
-    @include contentMargin;
-    padding-top: 5%;
-    display: flex;
-    flex-flow: column;
-    justify-content: space-between;
+.footer {
     background-color: $veryDarkBlue;
     color: $lightGrayishBlue;
     @include fontStyle($bodyFontFamily, $fontWeight400);
     font-size: 10pt;
+    padding-bottom: 2%;
 
-    .footer-logo img{
-        align-self: center;
-        height: 40px;
-        filter: brightness(0) invert(1);
-    }
-
-    .footer-contents{
+    .container {
+        @include contentMargin;
         display: flex;
-        flex-flow: row;
+        flex-flow: column;
         justify-content: space-between;
-        width: 85%;
-        margin-left: 0;
 
-        .col-1{
-            line-height: 35px;
-            margin: 20px 0;
+        .footer-logo img {
+            align-self: center;
+            height: 40px;
+            filter: brightness(0) invert(1);
+        }
 
-            img{
-                margin-right: 15px;
+        .footer-contents {
+            display: flex;
+            flex-flow: row;
+            justify-content: space-between;
+            width: 85%;
+            margin-left: 0;
+
+            .col-1 {
+                line-height: 35px;
+                margin: 20px 0;
+
+                img {
+                    margin-right: 15px;
+                }
+            }
+
+            .fab {
+                padding: 8px;
+                border: 1px solid white;
+                border-radius: 50%;
+                margin: 5px;
             }
         }
 
-        .fab{
-            padding: 8px;
-            border: 1px solid white;
-            border-radius: 50%;
-            margin: 5px;
-        }
-    }
-    
-    .attribution{
-        padding-top: 2em;
-        font-size: 10pt;
+        .attribution {
+            padding-top: 2em;
+            font-size: 10pt;
 
-        a{
-            text-decoration: none;
-            color: $lightGrayishBlue;
-            @include fontStyle($bodyFontFamily, $fontWeight400);
+            a {
+                text-decoration: none;
+                color: $lightGrayishBlue;
+                @include fontStyle($bodyFontFamily, $fontWeight400);
+            }
         }
     }
 }
 
-@media screen and (max-width: 375px), (max-width: 640px) {
-    .footer{
-        width: auto;
-        padding: 10%;
+@media screen and (max-width: 375px),
+(max-width: 640px) {
+    .footer {
+        .container {
+            width: auto;
+            padding: 10%;
 
-        .footer-contents{
-            width: 100%;
-            flex-flow: column;
+            .footer-contents {
+                width: 100%;
+                flex-flow: column;
 
-            .col-4{
-                margin: auto;
+                .col-4 {
+                    margin: auto;
+                }
             }
         }
     }

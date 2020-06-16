@@ -1,86 +1,92 @@
 @import './variables';
 @import './mixin';
 
-.subscription{
+.subscription {
     background-color: $desaturatedBlue;
     color: $lightGrayishBlue;
-    display: flex;
-    @include contentMargin;
 
-    .left {
-        align-self: center;
-        width: 50%;
-        max-width: 50vmax;
-        
-        h3{
-            letter-spacing: 1px;
-            font-size: 32px;
-            @include fontStyle($headingFontFamily, bold);
-        }
-        
-        p{
-            @include sectionParagraph;
-            line-height: 1.5;
-        }
-    }
+    .container {
 
-    .right{
-        align-self: center;
         @include contentMargin;
-        width: 50%;
-        max-width: 50vmax;
-        
-        input[type=email] {
-            width: 100%;
+
+        .left {
+            align-self: center;
+            width: 50%;
             max-width: 50vmax;
-            padding: 15px 5px;
-            border: 1px solid $veryDarkBlue;
-            border-radius: 2.5px;
-            margin-bottom: 10px;
+
+            h3 {
+                letter-spacing: 1px;
+                font-size: 32px;
+                @include fontStyle($headingFontFamily, bold);
+            }
+
+            p {
+                @include sectionParagraph;
+                line-height: 1.5;
+            }
         }
 
-        input::placeholder {
-            color: $lightGray;
-            padding: 1em;
-        }
+        .right {
+            align-self: center;
+            width: 35%;
+            padding: 0 5%;
 
-        input[type=submit] {
-            width: 40%;
-            padding: 1em;
-            background-color: $brightBlue;
-            color: $lightGrayishBlue;
-            border-radius: 2.5px;
-            border: transparent;
+            input[type=email] {
+                width: 100%;
+                max-width: 50vmax;
+                padding: 15px 5px;
+                border: 1px solid $veryDarkBlue;
+                border-radius: 2.5px;
+                margin-bottom: 10px;
+            }
+
+            input::placeholder {
+                color: $lightGray;
+                padding: 1em;
+            }
+
+            input[type=submit] {
+                width: 40%;
+                padding: 1em;
+                background-color: $brightBlue;
+                color: $lightGrayishBlue;
+                border-radius: 2.5px;
+                border: transparent;
+            }
         }
     }
 }
 
-@media screen and (max-width: 375px), (max-width: 640px) {
-    .subscription{
-        flex-flow: column;
-        text-align: center;
+@media screen and (max-width: 375px),
+(max-width: 640px) {
+    .subscription {
+        .container {
+            flex-flow: column;
+            text-align: center;
 
-        .left, .right{
-            width: 100%;
-            max-width: 45vmax;
-        }
-
-        .left{
-            margin-top: 10%;
-
-            h3{
-                font-size: 12pt;
-            }
-        }
-        .right{
-            margin-bottom: 10%;
-
-            p {
-                line-height: 1.5;
+            .left,
+            .right {
+                @include columnContainer;
             }
 
-            input[type=submit] {
-                width: 100%;
+            .left {
+                margin-top: 10%;
+
+                h3 {
+                    font-size: 12pt;
+                }
+            }
+
+            .right {
+                margin-bottom: 10%;
+
+                p {
+                    line-height: 1.5;
+                }
+
+                input[type=submit] {
+                    width: 100%;
+                }
             }
         }
     }

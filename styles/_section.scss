@@ -1,140 +1,157 @@
 @import './variables';
 @import './mixin';
-.desktop-curve{
+
+.desktop-curve {
     height: 100%;
     width: 100%;
     margin: 5% 0;
 }
 
-.section{
+.section {
     width: 100%;
     margin-top: -6%;
     background-color: $lightGrayishBlue;
 
-    .contents{
+    .container {
+        
         @include contentMargin;
-        display: flex;
-        justify-content: space-between;
-        padding-bottom: 10%;
-        width: auto;
-        margin: auto;
-        max-width: 1440px;
-        
-        .section-left{
-            align-self: center;
-            width: auto;
-            max-width: 50vmax;
-            padding-right: 5%;
 
-            h2{
-                @include fontStyle($headingFontFamily, $fontWeight700);
-                font-size: 35px;
-                line-height: 1.5;
-                margin: auto;
-            }
-            p{
-                @include fontStyle($bodyFontFamily, $fontWeight400);
-            }
-            .link{   
-                @include fontStyle($bodyFontFamily, $fontWeight400);
-                border-bottom: 1px solid $moderateCyan;
-                a{
-                    color: $moderateCyan;
-                    text-decoration: none;
+        .contents {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 10%;
+
+            .section-left {
+                @include columnContainer;
+                // align-self: center;
+                // width: auto;
+                // max-width: 50vmax;
+                // padding-right: 5%;
+
+                h2 {
+                    @include fontStyle($headingFontFamily, $fontWeight700);
+                    font-size: 35px;
+                    line-height: 1.5;
+                    margin: auto;
                 }
-            }
-        
-            .testimonial{
-                width: 42%;
-                max-width: 40vmax;
-                padding: 3.5% 5%;
-                margin-top: 5%;
-                background-color:#ffffff;
-                border-radius: 5px;
-                -webkit-box-shadow: 0px 0px 15px -10px $desaturatedBlue;
-                -moz-box-shadow: 0px 0px 15px -10px $desaturatedBlue;
-                box-shadow: 0px 0px 15px -10px $desaturatedBlue;
-                
-                p{
-                    font-size: 11px;
-                    line-height: 2;
-                    margin: 0;
+
+                p {
+                    @include fontStyle($bodyFontFamily, $fontWeight400);
+                    font-size: 15pt;
                 }
-                .author{
-                    display: flex;
-                    padding-top: 10px;
-                    img{
-                        height: 32px;
-                        width: 32px;
-                        border-radius: 50%;
+
+                .link {
+                    @include fontStyle($bodyFontFamily, $fontWeight400);
+                    border-bottom: 1px solid $moderateCyan;
+
+                    a {
+                        color: $moderateCyan;
+                        text-decoration: none;
                     }
-                    .name{
-                        margin: auto 0;
-                        padding-left: 5px;
-                        p{
-                            line-height: 1.5;
-                        }
-                        p:first-child{
-                            font-weight: bold;
-                            font-size: 10px;
-                        }
-                        p:nth-child(2){
-                            font-size: 8px;
-                        }   
+                }
+
+                .testimonial {
+                    width: 42%;
+                    max-width: 40vmax;
+                    padding: 3.5% 5%;
+                    margin-top: 5%;
+                    background-color: #ffffff;
+                    border-radius: 5px;
+                    -webkit-box-shadow: 0px 0px 15px -10px $desaturatedBlue;
+                    -moz-box-shadow: 0px 0px 15px -10px $desaturatedBlue;
+                    box-shadow: 0px 0px 15px -10px $desaturatedBlue;
+
+                    p {
+                        font-size: 11px;
+                        line-height: 2;
+                        margin: 0;
                     }
-                    
+
+                    .author {
+                        display: flex;
+                        padding-top: 10px;
+
+                        img {
+                            height: 32px;
+                            width: 32px;
+                            border-radius: 50%;
+                        }
+
+                        .name {
+                            margin: auto 0;
+                            padding-left: 5px;
+
+                            p {
+                                line-height: 1.5;
+                            }
+
+                            p:first-child {
+                                font-weight: bold;
+                                font-size: 10px;
+                            }
+
+                            p:nth-child(2) {
+                                font-size: 8px;
+                            }
+                        }
+
+                    }
                 }
             }
-        }
-        
-        .section-right{
-            @include illustratorStyle;
-            // max-width: 40vmax;
+
+            .section-right {
+                @include columnContainer;
+                @include illustratorStyle;
+                // max-width: 40vmax;
+            }
         }
     }
-    
+
 }
 
-@media screen and (max-width: 375px), (max-width: 640px) {
-    .section{
-        .contents{
-            flex-flow: column;
-
-            
-            .section-right{
-                flex: 1;
-                order: 1;
-                width: 100%;
-                max-width: 45vmax;
-                margin: 10% auto;
-            }
-
-            .section-left{
-                flex: 2;
-                order: 2;
-                width: auto;
-                text-align: center;
+@media screen and (max-width: 375px),
+(max-width: 640px) {
+    .section {
+        .container{
+            .contents {
+                flex-flow: column;
                 margin: auto;
-                padding-right: 0;
-                margin-bottom: 25%;
-
-                h2{
-                    font-size: 12pt;
-                }
-
-                p{
-                    line-height: 1.5;
-                }
-
-                .link{
-                    font-size: 10pt;
-                }
-
-                .testimonial{
-                    margin: 3em auto auto auto;
+    
+                .section-right {
+                    flex: 1;
+                    order: 1;
                     width: 100%;
-                    text-align: left;
-
+                    max-width: 45vmax;
+                    margin: 10% auto;
+                }
+    
+                .section-left {
+                    flex: 2;
+                    order: 2;
+                    width: auto;
+                    text-align: center;
+                    margin: auto;
+                    padding-right: 0;
+                    margin-bottom: 25%;
+    
+                    h2 {
+                        font-size: 12pt;
+                    }
+    
+                    p {
+                        line-height: 1.5;
+                    }
+    
+                    .link {
+                        font-size: 10pt;
+                    }
+    
+                    .testimonial {
+                        margin: 3em auto auto auto;
+                        width: 100%;
+                        text-align: left;
+    
+                    }
                 }
             }
         }

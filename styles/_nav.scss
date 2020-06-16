@@ -5,10 +5,6 @@
     @include contentMargin;
     display: flex;
     justify-content: space-between;
-    width: auto;
-    margin-bottom: 0%;
-    margin: auto;
-    max-width: 1440px;
 
     img {
         align-self: center;
@@ -17,8 +13,9 @@
 
     nav {
         display: flex;
-        font-family: $bodyFontFamily;
-        font-size: 16px;
+        // font-family: $bodyFontFamily;
+        @include fontStyle($bodyFontFamily, normal);
+        font-size: 14pt;
 
         ul {
             padding: 0px;
