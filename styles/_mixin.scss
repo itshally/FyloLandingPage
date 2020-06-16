@@ -7,11 +7,21 @@
 
 @mixin contentMargin {
     width: auto;
-    padding: 5%;
+    padding: 2.5%;
+    max-width: 1280px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
 }
 
 @mixin sectionParagraph{
     @include fontStyle($bodyFontFamily, $fontWeight400);
+}
+
+@mixin  columnContainer {
+    align-self: center;
+    width: 50%;
+    max-width: 50vmax;
 }
 
 @mixin illustratorStyle {
