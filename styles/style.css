@@ -1,6 +1,6 @@
-.nav {
+.nav .container {
   width: auto;
-  padding: 2.5%;
+  padding: 2.5% 5%;
   max-width: 1280px;
   margin: auto;
   display: -webkit-box;
@@ -13,14 +13,14 @@
   justify-content: space-between;
 }
 
-.nav img {
+.nav .container img {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
   height: 50px;
 }
 
-.nav nav {
+.nav .container nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -29,28 +29,28 @@
   font-size: 14pt;
 }
 
-.nav nav ul {
+.nav .container nav ul {
   padding: 0px;
 }
 
-.nav nav ul li {
+.nav .container nav ul li {
   display: inline;
   padding-left: 50px;
 }
 
 @media screen and (max-width: 375px), (max-width: 640px) {
-  .nav {
+  .nav .container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  .nav img {
+  .nav .container img {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
     height: 25px;
   }
-  .nav nav {
+  .nav .container nav {
     width: 100%;
     font-size: 14px;
     -webkit-box-orient: horizontal;
@@ -61,7 +61,7 @@
         -ms-grid-row-align: center;
         align-self: center;
   }
-  .nav nav ul {
+  .nav .container nav ul {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -70,14 +70,14 @@
         -ms-flex-pack: end;
             justify-content: flex-end;
   }
-  .nav nav ul li {
+  .nav .container nav ul li {
     padding: 0 10px;
   }
 }
 
 .header .container {
   width: auto;
-  padding: 2.5%;
+  padding: 2.5% 5%;
   max-width: 1280px;
   margin: auto;
   display: -webkit-box;
@@ -88,30 +88,35 @@
           justify-content: space-between;
 }
 
-.header .container .header-left {
+.header .container .col-left {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  width: 50%;
+  width: 100%;
   max-width: 50vmax;
 }
 
-.header .container .header-left h1 {
+.header .container .col-left h1 {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   line-height: 1.5;
-  margin: auto;
-  font-size: 2.5em;
+  font-size: 2.4em;
+  font-size-adjust: initial;
   color: #070439;
+  margin: auto;
+  width: 100%;
+  background-color: red;
 }
 
-.header .container .header-left p {
+.header .container .col-left p {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  font-size: 15pt;
+  font-size: 1.1em;
+  line-height: 1.5;
+  width: 95%;
 }
 
-.header .container .header-left .header-email {
+.header .container .col-left .header-email {
   width: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -122,7 +127,7 @@
           flex-flow: row;
 }
 
-.header .container .header-left .header-email input[type=email] {
+.header .container .col-left .header-email input[type=email] {
   width: 50%;
   max-width: 45vmax;
   padding: 1em;
@@ -130,23 +135,23 @@
   border-radius: 2.5px;
 }
 
-.header .container .header-left .header-email input::-webkit-input-placeholder {
+.header .container .col-left .header-email input::-webkit-input-placeholder {
   color: #bfbfbf;
 }
 
-.header .container .header-left .header-email input:-ms-input-placeholder {
+.header .container .col-left .header-email input:-ms-input-placeholder {
   color: #bfbfbf;
 }
 
-.header .container .header-left .header-email input::-ms-input-placeholder {
+.header .container .col-left .header-email input::-ms-input-placeholder {
   color: #bfbfbf;
 }
 
-.header .container .header-left .header-email input::placeholder {
+.header .container .col-left .header-email input::placeholder {
   color: #bfbfbf;
 }
 
-.header .container .header-left .header-email input[type=submit] {
+.header .container .col-left .header-email input[type=submit] {
   width: 35%;
   max-width: 50vmax;
   padding: 10px 13px;
@@ -159,21 +164,19 @@
   font-weight: 400;
 }
 
-.header .container .header-right {
+.header .container .col-right {
   -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
       align-self: center;
-  width: 50%;
-  max-width: 50vmax;
-  width: 35em;
-  max-width: 45vmax;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.header .container .header-right .illustrators {
   width: 100%;
   max-width: 50vmax;
+  width: 100%;
+  background-color: red;
+  max-width: 40vmax;
+}
+
+.header .container .col-right .illustrators {
+  width: 100%;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -253,14 +256,13 @@
 }
 
 .section {
-  width: 100%;
   margin-top: -6%;
   background-color: #f6f6fe;
 }
 
 .section .container {
   width: auto;
-  padding: 2.5%;
+  padding: 2.5% 5%;
   max-width: 1280px;
   margin: auto;
   display: -webkit-box;
@@ -271,50 +273,46 @@
           justify-content: space-between;
 }
 
-.section .container .contents {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-bottom: 10%;
-}
-
-.section .container .contents .section-left {
+.section .container .col-left {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  width: 50%;
+  width: 100%;
   max-width: 50vmax;
 }
 
-.section .container .contents .section-left h2 {
+.section .container .col-left h2 {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 35px;
   line-height: 1.5;
+  font-size: 2.4em;
+  font-size-adjust: initial;
+  color: #070439;
   margin: auto;
+  width: 100%;
+  background-color: red;
 }
 
-.section .container .contents .section-left p {
+.section .container .col-left p {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  font-size: 15pt;
+  font-size: 1.1em;
+  line-height: 1.5;
+  width: 95%;
 }
 
-.section .container .contents .section-left .link {
+.section .container .col-left .link {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   border-bottom: 1px solid #3c9f8f;
 }
 
-.section .container .contents .section-left .link a {
+.section .container .col-left .link a {
   color: #3c9f8f;
   text-decoration: none;
 }
 
-.section .container .contents .section-left .testimonial {
+.section .container .col-left .testimonial {
   width: 42%;
   max-width: 40vmax;
   padding: 3.5% 5%;
@@ -325,58 +323,56 @@
   box-shadow: 0px 0px 15px -10px #585989;
 }
 
-.section .container .contents .section-left .testimonial p {
+.section .container .col-left .testimonial p {
   font-size: 11px;
   line-height: 2;
   margin: 0;
 }
 
-.section .container .contents .section-left .testimonial .author {
+.section .container .col-left .testimonial .author {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding-top: 10px;
 }
 
-.section .container .contents .section-left .testimonial .author img {
+.section .container .col-left .testimonial .author img {
   height: 32px;
   width: 32px;
   border-radius: 50%;
 }
 
-.section .container .contents .section-left .testimonial .author .name {
+.section .container .col-left .testimonial .author .name {
   margin: auto 0;
   padding-left: 5px;
 }
 
-.section .container .contents .section-left .testimonial .author .name p {
+.section .container .col-left .testimonial .author .name p {
   line-height: 1.5;
 }
 
-.section .container .contents .section-left .testimonial .author .name p:first-child {
+.section .container .col-left .testimonial .author .name p:first-child {
   font-weight: bold;
   font-size: 10px;
 }
 
-.section .container .contents .section-left .testimonial .author .name p:nth-child(2) {
+.section .container .col-left .testimonial .author .name p:nth-child(2) {
   font-size: 8px;
 }
 
-.section .container .contents .section-right {
+.section .container .col-right {
   -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
       align-self: center;
-  width: 50%;
-  max-width: 50vmax;
-  width: 35em;
-  max-width: 45vmax;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.section .container .contents .section-right .illustrators {
   width: 100%;
   max-width: 50vmax;
+  width: 100%;
+  background-color: red;
+  max-width: 30vmax;
+}
+
+.section .container .col-right .illustrators {
+  width: 100%;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -437,7 +433,7 @@
 
 .subscription .container {
   width: auto;
-  padding: 2.5%;
+  padding: 2.5% 5%;
   max-width: 1280px;
   margin: auto;
   display: -webkit-box;
@@ -448,7 +444,7 @@
           justify-content: space-between;
 }
 
-.subscription .container .left {
+.subscription .container .col-left {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -456,20 +452,23 @@
   max-width: 50vmax;
 }
 
-.subscription .container .left h3 {
+.subscription .container .col-left h3 {
   letter-spacing: 1px;
   font-size: 32px;
   font-family: "Raleway", sans-serif;
   font-weight: bold;
 }
 
-.subscription .container .left p {
+.subscription .container .col-left p {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
+  font-size: 1.1em;
+  line-height: 1.5;
+  width: 95%;
   line-height: 1.5;
 }
 
-.subscription .container .right {
+.subscription .container .col-right {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -477,7 +476,7 @@
   padding: 0 5%;
 }
 
-.subscription .container .right input[type=email] {
+.subscription .container .col-right input[type=email] {
   width: 100%;
   max-width: 50vmax;
   padding: 15px 5px;
@@ -486,27 +485,27 @@
   margin-bottom: 10px;
 }
 
-.subscription .container .right input::-webkit-input-placeholder {
+.subscription .container .col-right input::-webkit-input-placeholder {
   color: #bfbfbf;
   padding: 1em;
 }
 
-.subscription .container .right input:-ms-input-placeholder {
+.subscription .container .col-right input:-ms-input-placeholder {
   color: #bfbfbf;
   padding: 1em;
 }
 
-.subscription .container .right input::-ms-input-placeholder {
+.subscription .container .col-right input::-ms-input-placeholder {
   color: #bfbfbf;
   padding: 1em;
 }
 
-.subscription .container .right input::placeholder {
+.subscription .container .col-right input::placeholder {
   color: #bfbfbf;
   padding: 1em;
 }
 
-.subscription .container .right input[type=submit] {
+.subscription .container .col-right input[type=submit] {
   width: 40%;
   padding: 1em;
   background-color: #3065f8;
@@ -528,22 +527,22 @@
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
-    width: 50%;
+    width: 100%;
     max-width: 50vmax;
   }
-  .subscription .container .left {
+  .subscription .container .col-left {
     margin-top: 10%;
   }
-  .subscription .container .left h3 {
+  .subscription .container .col-left h3 {
     font-size: 12pt;
   }
-  .subscription .container .right {
+  .subscription .container .col-right {
     margin-bottom: 10%;
   }
-  .subscription .container .right p {
+  .subscription .container .col-right p {
     line-height: 1.5;
   }
-  .subscription .container .right input[type=submit] {
+  .subscription .container .col-right input[type=submit] {
     width: 100%;
   }
 }
@@ -559,7 +558,7 @@
 
 .footer .container {
   width: auto;
-  padding: 2.5%;
+  padding: 2.5% 5%;
   max-width: 1280px;
   margin: auto;
   display: -webkit-box;
