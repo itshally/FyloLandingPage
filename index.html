@@ -4,17 +4,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Hally, Harriette Bianan">
+  <meta name="description" content="A fylo landing page with two column layout.">
   <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
   <title>Frontend Mentor | Fylo landing page with two column layout</title>
 
   <!-- google fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="./styles/style.css">
+  
+  <!-- fontawesome kit -->
   <script src="https://kit.fontawesome.com/39d0e3f084.js" crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" href="./styles/style.css">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution {
@@ -32,20 +35,22 @@
 
   <!-- navigation -->
   <div class="nav">
-    <img src="./images/logo.svg" alt="logo">
-    <nav>
-      <ul>
-        <li>Features</li>
-        <li>Team</li>
-        <li>Sign In</li>
-      </ul>
-    </nav>
+    <div class="container">
+      <img src="./images/logo.svg" alt="logo">
+      <nav>
+        <ul>
+          <li>Features</li>
+          <li>Team</li>
+          <li>Sign In</li>
+        </ul>
+      </nav>
+    </div>
   </div>
 
   <!-- header part -->
   <div class="header">
     <div class="container">
-      <div class="header-left">
+      <div class="col-left">
         <h1>All your files in one secure location, accessible anywhere.</h1>
         <p>
           Fylo stores your most important files in one secure location.
@@ -59,7 +64,7 @@
         </div>
       </div>
   
-      <div class="header-right">
+      <div class="col-right">
         <img src="./images/illustration-1.svg" class="illustrators" alt="">
       </div>
     </div>
@@ -71,41 +76,38 @@
   <!-- section one -->
   <div class="section">
     <div class="container">
-      <!-- contents -->
-      <div class="contents">
-        <div class="section-left">
-          <h2>Stay productive, wherever you are</h2>
+      <div class="col-left">
+        <h2>Stay productive, wherever you are</h2>
+        <p>
+          Never let location be an issue when accessing your files. Fylo has you
+          covered for all of your file storage needs.
+        </p>
+        <p>
+          Securely share files and folders with friends, family and colleagues for
+          live collaboration. No email attachments required!
+        </p>
+        <span class="link">
+          <a href="#">See how Fylo works <img src="./images/icon-arrow.svg" alt="arrow icon"></a>
+        </span>
+        <div class="testimonial">
+          <img src="./images/icon-quotes.svg" alt="quote icon">
           <p>
-            Never let location be an issue when accessing your files. Fylo has you
-            covered for all of your file storage needs.
+            Fylo has improved our team productivity by an order of magnitude. Since
+            making the switch our team has become a well-oiled collaboration machine.
           </p>
-          <p>
-            Securely share files and folders with friends, family and colleagues for
-            live collaboration. No email attachments required!
-          </p>
-          <span class="link">
-            <a href="#">See how Fylo works <img src="./images/icon-arrow.svg" alt="arrow icon"></a>
-          </span>
-          <div class="testimonial">
-            <img src="./images/icon-quotes.svg" alt="quote icon">
-            <p>
-              Fylo has improved our team productivity by an order of magnitude. Since
-              making the switch our team has become a well-oiled collaboration machine.
-            </p>
 
-            <div class="author">
-              <img src="./images/avatar-testimonial.jpg" alt="">
-              <div class="name">
-                <p>Kyle Burton</p>
-                <p>Founder & CEO, Huddle</p>
-              </div>
+          <div class="author">
+            <img src="./images/avatar-testimonial.jpg" alt="">
+            <div class="name">
+              <p>Kyle Burton</p>
+              <p>Founder & CEO, Huddle</p>
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="section-right">
-          <img src="./images/illustration-2.svg" class="illustrators" alt="">
-        </div>
+      <div class="col-right">
+        <img src="./images/illustration-2.svg" class="illustrators" alt="">
       </div>
     </div>
   </div>
@@ -113,7 +115,7 @@
   <!-- section 2 -->
   <div class="subscription">
     <div class="container">
-      <div class="left">
+      <div class="col-left">
         <h3>Get early access today</h3>
         <p>
           It only takes a minute to sign up and our free starter tier is extremely generous.
@@ -121,7 +123,7 @@
         </p>
       </div>
   
-      <div class="right">
+      <div class="col-right">
         <input type="email" title="email input" aria-label="email input" placeholder="email@example.com">
         <input type="submit" value="Get Started For Free" id="subscribeBtn">
       </div>
