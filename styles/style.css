@@ -1,6 +1,6 @@
 .nav .container {
   width: auto;
-  padding: 2.5% 5%;
+  padding: 8% 5%;
   max-width: 1280px;
   margin: auto;
   display: -webkit-box;
@@ -9,6 +9,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 5% 5%;
   display: flex;
   justify-content: space-between;
 }
@@ -25,8 +26,8 @@
   display: -ms-flexbox;
   display: flex;
   font-family: "Open Sans", sans-serif;
-  font-weight: normal;
-  font-size: 14pt;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 .nav .container nav ul {
@@ -77,7 +78,7 @@
 
 .header .container {
   width: auto;
-  padding: 2.5% 5%;
+  padding: 8% 5%;
   max-width: 1280px;
   margin: auto;
   display: -webkit-box;
@@ -100,19 +101,20 @@
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   line-height: 1.5;
-  font-size: 2.4em;
+  font-size: 2.5em;
   font-size-adjust: initial;
   color: #070439;
   margin: auto;
   width: 100%;
+  word-spacing: 1px;
 }
 
 .header .container .col-left p {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  font-size: 1.1em;
   line-height: 1.5;
-  width: 90%;
+  font-size: 1.13em;
+  width: 95%;
 }
 
 .header .container .col-left .header-email {
@@ -260,7 +262,7 @@
 
 .section .container {
   width: auto;
-  padding: 2.5% 5%;
+  padding: 8% 5%;
   max-width: 1280px;
   margin: auto;
   display: -webkit-box;
@@ -277,25 +279,26 @@
       align-self: center;
   width: 100%;
   max-width: 50vmax;
+  max-width: 55vmax;
 }
 
 .section .container .col-left h2 {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   line-height: 1.5;
-  font-size: 2.4em;
+  font-size: 2.5em;
   font-size-adjust: initial;
   color: #070439;
   margin: auto;
   width: 100%;
+  word-spacing: 1px;
 }
 
 .section .container .col-left p {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  font-size: 1.1em;
   line-height: 1.5;
-  width: 90%;
+  width: 80%;
 }
 
 .section .container .col-left .link {
@@ -310,7 +313,7 @@
 }
 
 .section .container .col-left .testimonial {
-  width: 42%;
+  width: 40%;
   max-width: 40vmax;
   padding: 3.5% 5%;
   margin-top: 5%;
@@ -321,9 +324,10 @@
 }
 
 .section .container .col-left .testimonial p {
-  font-size: 11px;
+  font-size: 10pt;
   line-height: 2;
   margin: 0;
+  width: auto;
 }
 
 .section .container .col-left .testimonial .author {
@@ -350,11 +354,11 @@
 
 .section .container .col-left .testimonial .author .name p:first-child {
   font-weight: bold;
-  font-size: 10px;
+  font-size: 11px;
 }
 
 .section .container .col-left .testimonial .author .name p:nth-child(2) {
-  font-size: 8px;
+  font-size: 9.5px;
 }
 
 .section .container .col-right {
@@ -429,7 +433,7 @@
 
 .subscription .container {
   width: auto;
-  padding: 2.5% 5%;
+  padding: 8% 5%;
   max-width: 1280px;
   margin: auto;
   display: -webkit-box;
@@ -449,19 +453,25 @@
 }
 
 .subscription .container .col-left h3 {
-  letter-spacing: 1px;
-  font-size: 32px;
   font-family: "Raleway", sans-serif;
-  font-weight: bold;
+  font-weight: 700;
+  line-height: 1.5;
+  font-size: 2.5em;
+  font-size-adjust: initial;
+  color: #070439;
+  margin: auto;
+  width: 100%;
+  word-spacing: 1px;
+  font-size: 2em;
+  color: #f6f6fe;
 }
 
 .subscription .container .col-left p {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  font-size: 1.1em;
   line-height: 1.5;
   width: 90%;
-  line-height: 1.5;
+  word-spacing: 1px;
 }
 
 .subscription .container .col-right {
@@ -502,7 +512,7 @@
 }
 
 .subscription .container .col-right input[type=submit] {
-  width: 40%;
+  width: 50%;
   padding: 1em;
   background-color: #3065f8;
   color: #f6f6fe;
@@ -549,12 +559,12 @@
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 10pt;
-  padding-bottom: 2%;
+  padding-bottom: 0%;
 }
 
 .footer .container {
   width: auto;
-  padding: 2.5% 5%;
+  padding: 8% 5%;
   max-width: 1280px;
   margin: auto;
   display: -webkit-box;
