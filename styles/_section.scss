@@ -8,102 +8,90 @@
 }
 
 .section {
-    width: 100%;
+    // width: 100%;
     margin-top: -6%;
     background-color: $lightGrayishBlue;
 
     .container {
         
         @include contentMargin;
+        .col-left {
+            @include columnContainer;
+            max-width: 55vmax;
 
-        .contents {
-            display: flex;
-            justify-content: space-between;
-            padding-bottom: 10%;
+            h2 {
+                @include sectionHeading;
+            }
 
-            .section-left {
-                @include columnContainer;
-                // align-self: center;
-                // width: auto;
-                // max-width: 50vmax;
-                // padding-right: 5%;
+            p {
+                @include sectionParagraph;
+                width: 80%;
+            }
 
-                h2 {
-                    @include fontStyle($headingFontFamily, $fontWeight700);
-                    font-size: 35px;
-                    line-height: 1.5;
-                    margin: auto;
+            .link {
+                @include fontStyle($bodyFontFamily, $fontWeight400);
+                border-bottom: 1px solid $moderateCyan;
+
+                a {
+                    color: $moderateCyan;
+                    text-decoration: none;
                 }
+            }
+
+            .testimonial {
+                width: 40%;
+                max-width: 40vmax;
+                padding: 3.5% 5%;
+                margin-top: 5%;
+                background-color: #ffffff;
+                border-radius: 5px;
+                -webkit-box-shadow: 0px 0px 15px -10px $desaturatedBlue;
+                -moz-box-shadow: 0px 0px 15px -10px $desaturatedBlue;
+                box-shadow: 0px 0px 15px -10px $desaturatedBlue;
 
                 p {
-                    @include fontStyle($bodyFontFamily, $fontWeight400);
-                    font-size: 15pt;
+                    font-size: 10pt;
+                    line-height: 2;
+                    margin: 0;
+                    width: auto;
                 }
 
-                .link {
-                    @include fontStyle($bodyFontFamily, $fontWeight400);
-                    border-bottom: 1px solid $moderateCyan;
+                .author {
+                    display: flex;
+                    padding-top: 10px;
 
-                    a {
-                        color: $moderateCyan;
-                        text-decoration: none;
-                    }
-                }
-
-                .testimonial {
-                    width: 42%;
-                    max-width: 40vmax;
-                    padding: 3.5% 5%;
-                    margin-top: 5%;
-                    background-color: #ffffff;
-                    border-radius: 5px;
-                    -webkit-box-shadow: 0px 0px 15px -10px $desaturatedBlue;
-                    -moz-box-shadow: 0px 0px 15px -10px $desaturatedBlue;
-                    box-shadow: 0px 0px 15px -10px $desaturatedBlue;
-
-                    p {
-                        font-size: 11px;
-                        line-height: 2;
-                        margin: 0;
+                    img {
+                        height: 32px;
+                        width: 32px;
+                        border-radius: 50%;
                     }
 
-                    .author {
-                        display: flex;
-                        padding-top: 10px;
+                    .name {
+                        margin: auto 0;
+                        padding-left: 5px;
 
-                        img {
-                            height: 32px;
-                            width: 32px;
-                            border-radius: 50%;
+                        p {
+                            line-height: 1.5;
                         }
 
-                        .name {
-                            margin: auto 0;
-                            padding-left: 5px;
-
-                            p {
-                                line-height: 1.5;
-                            }
-
-                            p:first-child {
-                                font-weight: bold;
-                                font-size: 10px;
-                            }
-
-                            p:nth-child(2) {
-                                font-size: 8px;
-                            }
+                        p:first-child {
+                            font-weight: bold;
+                            font-size: 11px;
                         }
 
+                        p:nth-child(2) {
+                            font-size: 9.5px;
+                        }
                     }
+
                 }
             }
+        }
 
-            .section-right {
-                @include columnContainer;
-                @include illustratorStyle;
-                // max-width: 40vmax;
-            }
+        .col-right {
+            @include columnContainer;
+            @include illustratorStyle;
+            max-width: 30vmax;
         }
     }
 
