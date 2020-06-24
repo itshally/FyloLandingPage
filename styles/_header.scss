@@ -6,20 +6,17 @@
     .container{
         @include contentMargin;
 
-        .header-left {
+        .col-left {
             @include columnContainer;
 
             h1 {
-                @include fontStyle($headingFontFamily, $fontWeight700);
-                line-height: 1.5;
-                margin: auto;
-                font-size: 2.5em;
-                color: $veryDarkBlue;
+               @include sectionHeading;
             }
     
             p {
-                @include fontStyle($bodyFontFamily, $fontWeight400);
-                font-size: 15pt;
+                @include sectionParagraph;
+                font-size: 1.13em;
+                width: 95%;
             }
     
             .header-email{
@@ -52,9 +49,11 @@
             }
         }
     
-        .header-right{
+        .col-right{
             @include columnContainer;
             @include illustratorStyle;
+            
+            max-width: 40vmax;
         }
     }
 }
