@@ -9,24 +9,28 @@
 
         @include contentMargin;
 
-        .left {
+        .col-left {
             align-self: center;
             width: 50%;
             max-width: 50vmax;
 
             h3 {
-                letter-spacing: 1px;
-                font-size: 32px;
-                @include fontStyle($headingFontFamily, bold);
+                // letter-spacing: 1px;
+                // font-size: 32px;
+                // @include fontStyle($headingFontFamily, bold);
+                @include sectionHeading;
+                font-size: 2em;
+                color: $lightGrayishBlue;
             }
 
             p {
                 @include sectionParagraph;
-                line-height: 1.5;
+                width: 90%;
+                word-spacing: 1px;
             }
         }
 
-        .right {
+        .col-right {
             align-self: center;
             width: 35%;
             padding: 0 5%;
@@ -46,7 +50,7 @@
             }
 
             input[type=submit] {
-                width: 40%;
+                width: 50%;
                 padding: 1em;
                 background-color: $brightBlue;
                 color: $lightGrayishBlue;
@@ -69,7 +73,7 @@
                 @include columnContainer;
             }
 
-            .left {
+            .col-left {
                 margin-top: 10%;
 
                 h3 {
@@ -77,7 +81,7 @@
                 }
             }
 
-            .right {
+            .col-right {
                 margin-bottom: 10%;
 
                 p {
