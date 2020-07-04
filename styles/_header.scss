@@ -8,7 +8,7 @@
 
         .col-left {
             @include columnContainer;
-
+            display: grid;
             h1 {
                @include sectionHeading;
             }
