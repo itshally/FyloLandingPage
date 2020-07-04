@@ -9,7 +9,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 5% 5%;
+  padding: 2.5% 5%;
   display: flex;
   justify-content: space-between;
 }
@@ -90,11 +90,12 @@
 }
 
 .header .container .col-left {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
+  -ms-grid-row-align: center;
       align-self: center;
   width: 100%;
   max-width: 50vmax;
+  display: -ms-grid;
+  display: grid;
 }
 
 .header .container .col-left h1 {
