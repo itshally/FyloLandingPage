@@ -64,13 +64,27 @@
             width: auto;
             padding: 10%;
 
+            .footer-logo img {
+                height: 50px;
+                padding-top: 8%;
+            }
+
             .footer-contents {
-                width: 100%;
                 flex-flow: column;
+
+                span,
+                p {
+                    font-size: 11pt;
+                }
 
                 .col-4 {
                     margin: auto;
                 }
+
+            }
+
+            .attribution {
+                font-size: 8pt;
             }
         }
     }

@@ -10,14 +10,9 @@
         @include contentMargin;
 
         .col-left {
-            align-self: center;
-            width: 50%;
-            max-width: 50vmax;
+            @include columnContainer;
 
             h3 {
-                // letter-spacing: 1px;
-                // font-size: 32px;
-                // @include fontStyle($headingFontFamily, bold);
                 @include sectionHeading;
                 font-size: 2em;
                 color: $lightGrayishBlue;
@@ -31,14 +26,12 @@
         }
 
         .col-right {
-            align-self: center;
-            width: 35%;
-            padding: 0 5%;
+            @include columnContainer;
 
             input[type=email] {
                 width: 100%;
-                max-width: 50vmax;
-                padding: 15px 5px;
+                max-width: 50vmin;
+                padding: 15px;
                 border: 1px solid $veryDarkBlue;
                 border-radius: 2.5px;
                 margin-bottom: 10px;
@@ -68,28 +61,32 @@
             flex-flow: column;
             text-align: center;
 
-            .left,
-            .right {
-                @include columnContainer;
-            }
-
             .col-left {
                 margin-top: 10%;
 
                 h3 {
-                    font-size: 12pt;
+                    font-size: 14pt;
+                }
+
+                p {
+                    font-size: 11pt;
+                    line-height: 1.5;
                 }
             }
 
             .col-right {
                 margin-bottom: 10%;
+                width: 80%;
+                display: flex;
+                flex-flow: column;
 
-                p {
-                    line-height: 1.5;
+                input[type=email] {
+                    width: auto;
+                    max-width: none;
                 }
 
                 input[type=submit] {
-                    width: 100%;
+                    width: auto;
                 }
             }
         }

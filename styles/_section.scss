@@ -8,16 +8,15 @@
 }
 
 .section {
-    // width: 100%;
     margin-top: -6%;
     background-color: $lightGrayishBlue;
 
     .container {
-        
+
         @include contentMargin;
+
         .col-left {
             @include columnContainer;
-            max-width: 55vmax;
 
             h2 {
                 @include sectionHeading;
@@ -91,7 +90,7 @@
         .col-right {
             @include columnContainer;
             @include illustratorStyle;
-            max-width: 30vmax;
+            max-width: 35vmax;
         }
     }
 
@@ -100,47 +99,56 @@
 @media screen and (max-width: 375px),
 (max-width: 640px) {
     .section {
-        .container{
-            .contents {
-                flex-flow: column;
+        .container {
+            flex-flow: column;
+            margin: auto;
+            padding-left: 0;
+            padding-right: 0;
+
+            .col-left {
+                flex: 2;
+                order: 2;
+                width: 100%;
+                text-align: center;
                 margin: auto;
-    
-                .section-right {
-                    flex: 1;
-                    order: 1;
-                    width: 100%;
-                    max-width: 45vmax;
-                    margin: 10% auto;
+                padding-right: 0;
+                margin-bottom: 25%;
+
+                h2 {
+                    font-size: 13pt;
                 }
-    
-                .section-left {
-                    flex: 2;
-                    order: 2;
+
+                p {
+                    font-size: 10.8pt;
                     width: auto;
-                    text-align: center;
-                    margin: auto;
-                    padding-right: 0;
-                    margin-bottom: 25%;
-    
-                    h2 {
-                        font-size: 12pt;
-                    }
-    
+                    line-height: 1.5;
+                }
+
+                .link {
+                    font-size: 10pt;
+                }
+
+                .testimonial {
+                    margin: 3em auto auto auto;
+                    width: auto;
+                    text-align: left;
+                    padding: 5%;
+
                     p {
-                        line-height: 1.5;
-                    }
-    
-                    .link {
-                        font-size: 10pt;
-                    }
-    
-                    .testimonial {
-                        margin: 3em auto auto auto;
+                        font-size: 9pt;
+                        line-height: 1.8;
+                        margin: 0;
                         width: 100%;
-                        text-align: left;
-    
                     }
                 }
+            }
+
+            .col-right {
+                flex: 1;
+                order: 1;
+                width: 100%;
+                max-width: 45vmax;
+                margin: 10% auto;
             }
         }
     }
