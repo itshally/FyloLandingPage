@@ -27,13 +27,14 @@
     width: 100%;
     word-spacing: 1px;
 }
+
 // section paragraph
-@mixin sectionParagraph{
+@mixin sectionParagraph {
     @include fontStyle($bodyFontFamily, $fontWeight400);
     line-height: 1.5;
 }
 
-@mixin  columnContainer {
+@mixin columnContainer {
     align-self: center;
     width: 100%;
     max-width: 50vmax;
@@ -41,7 +42,8 @@
 
 @mixin illustratorStyle {
     width: 100%;
-    .illustrators{
+
+    .illustrators {
         width: 100%;
         align-self: center;
     }
