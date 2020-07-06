@@ -3,38 +3,40 @@
 
 .header {
 
-    .container{
+    .container {
         @include contentMargin;
 
         .col-left {
             @include columnContainer;
-            display: grid;
+
             h1 {
-               @include sectionHeading;
+                @include sectionHeading;
             }
-    
+
             p {
                 @include sectionParagraph;
                 font-size: 1.13em;
                 width: 95%;
             }
-    
-            .header-email{
+
+            .header-email {
                 width: auto;
                 display: flex;
                 flex-flow: row;
+
                 input[type=email] {
                     width: 50%;
                     max-width: 45vmax;
                     padding: 1em;
                     border: 1px solid $veryDarkBlue;
                     border-radius: 2.5px;
+
                 }
-        
+
                 input::placeholder {
                     color: $lightGray;
                 }
-        
+
                 input[type=submit] {
                     width: 35%;
                     max-width: 50vmax;
@@ -48,70 +50,71 @@
                 }
             }
         }
-    
-        .col-right{
+
+        .col-right {
             @include columnContainer;
             @include illustratorStyle;
-            
+
             max-width: 40vmax;
         }
     }
 }
 
 
-@media screen and (min-width: 1440px) {
-    
-}
+@media screen and (min-width: 1440px) {}
 
-@media screen and (max-width: 375px), (max-width: 640px) {
-    .header{
-        .container{
+@media screen and (max-width: 375px),
+(max-width: 640px) {
+    .header {
+        .container {
             flex-flow: column;
 
-        .header-right{
-            flex: 1;
-            order: 1;
-            width: 100%;
-            max-width: 45vmax;
-            margin: 10% auto;
-        }
-
-        .header-left{
-            flex: 2;
-            order: 2;
-            width: auto;
-            text-align: center;
-            margin: auto;
-            padding-right: 0;
-            margin-bottom: 25%;
-
-            h1{
-                font-size: 18pt;
-            }
-            p{
-                line-height: 1.5;
-            }
-
-            .header-email{
-                width: 100%;
+            .col-left {
+                flex: 2;
+                order: 2;
+                width: auto;
+                text-align: center;
                 margin: auto;
-                flex-flow: column;
+                padding-right: 0;
+                margin-bottom: 25%;
 
-                input[type=email] {
-                    width: auto;
-                    margin: 5% 0;
+                h1 {
+                    font-size: 18pt;
                 }
-        
-                input::placeholder {
-                    color: $lightGray;
+
+                p {
+                    font-size: 11pt;
+                    line-height: 1.5;
                 }
-        
-                input[type=submit] {
-                    width: auto;
-                    margin-left: 0;
+
+                .header-email {
+                    width: 100%;
+                    margin: auto;
+                    flex-flow: column;
+
+                    input[type=email] {
+                        width: auto;
+                        margin: 5% 0;
+                    }
+
+                    input::placeholder {
+                        color: $lightGray;
+                    }
+
+                    input[type=submit] {
+                        width: auto;
+                        margin-left: 0;
+                    }
                 }
             }
-        }
+
+            .col-right {
+                flex: 1;
+                order: 1;
+                width: 100%;
+                max-width: 45vmax;
+                margin: 10% auto;
+            }
         }
     }
 }
