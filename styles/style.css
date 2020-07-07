@@ -9,7 +9,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 2.5% 5%;
+  padding: 5%;
   display: flex;
   justify-content: space-between;
 }
@@ -101,7 +101,7 @@
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   line-height: 1.5;
-  font-size: 2.5em;
+  font-size: 2em;
   font-size-adjust: initial;
   color: #070439;
   margin: auto;
@@ -180,6 +180,12 @@
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+@media only screen and (width: 768px) {
+  .header .container .col-left h1 {
+    font-size: 18pt;
+  }
 }
 
 @media screen and (max-width: 375px), (max-width: 640px) {
@@ -286,7 +292,7 @@
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   line-height: 1.5;
-  font-size: 2.5em;
+  font-size: 2em;
   font-size-adjust: initial;
   color: #070439;
   margin: auto;
@@ -313,8 +319,9 @@
 }
 
 .section .container .col-left .testimonial {
-  width: 40%;
-  max-width: 40vmax;
+  width: auto;
+  min-width: 25vmax;
+  max-width: 20vmax;
   padding: 3.5% 5%;
   margin-top: 5%;
   background-color: #ffffff;
@@ -378,15 +385,18 @@
       align-self: center;
 }
 
+@media only screen and (width: 768px) {
+  .section .container .col-left h2 {
+    font-size: 18pt;
+  }
+}
+
 @media screen and (max-width: 375px), (max-width: 640px) {
   .section .container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-flow: column;
             flex-flow: column;
-    margin: auto;
-    padding-left: 0;
-    padding-right: 0;
   }
   .section .container .col-left {
     -webkit-box-flex: 2;
@@ -395,7 +405,7 @@
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
-    width: 100%;
+    width: auto;
     text-align: center;
     margin: auto;
     padding-right: 0;
@@ -406,7 +416,8 @@
   }
   .section .container .col-left p {
     font-size: 10.8pt;
-    width: auto;
+    width: 100%;
+    max-width: 50vmax;
     line-height: 1.5;
   }
   .section .container .col-left .link {
@@ -415,11 +426,12 @@
   .section .container .col-left .testimonial {
     margin: 3em auto auto auto;
     width: auto;
+    max-width: 40vmax;
     text-align: left;
     padding: 5%;
   }
   .section .container .col-left .testimonial p {
-    font-size: 9pt;
+    font-size: 8.5pt;
     line-height: 1.8;
     margin: 0;
     width: 100%;
@@ -467,7 +479,7 @@
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   line-height: 1.5;
-  font-size: 2.5em;
+  font-size: 2em;
   font-size-adjust: initial;
   color: #070439;
   margin: auto;
@@ -529,6 +541,15 @@
   color: #f6f6fe;
   border-radius: 2.5px;
   border: transparent;
+}
+
+@media only screen and (width: 768px) {
+  .subscription .container .col-left h3 {
+    font-size: 18pt;
+  }
+  .subscription .container .col-right input[type=email] {
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 375px), (max-width: 640px) {
