@@ -54,6 +54,23 @@
     }
 }
 
+@media only screen and (width: 768px){
+    .subscription{
+        .container{
+            .col-left{
+                h3{
+                    font-size: 18pt;
+                }
+            }
+            .col-right{
+                input[type=email] {
+                    width: 90%;
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 375px),
 (max-width: 640px) {
     .subscription {

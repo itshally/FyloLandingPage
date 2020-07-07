@@ -38,8 +38,9 @@
             }
 
             .testimonial {
-                width: 40%;
-                max-width: 40vmax;
+                width: auto;
+                min-width: 25vmax;
+                max-width: 20vmax;
                 padding: 3.5% 5%;
                 margin-top: 5%;
                 background-color: #ffffff;
@@ -96,19 +97,28 @@
 
 }
 
+@media only screen and (width: 768px){
+    .section{
+        .container{
+            .col-left{
+                h2{
+                    font-size: 18pt;
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 375px),
 (max-width: 640px) {
     .section {
         .container {
             flex-flow: column;
-            margin: auto;
-            padding-left: 0;
-            padding-right: 0;
 
             .col-left {
                 flex: 2;
                 order: 2;
-                width: 100%;
+                width: auto;
                 text-align: center;
                 margin: auto;
                 padding-right: 0;
@@ -120,7 +130,8 @@
 
                 p {
                     font-size: 10.8pt;
-                    width: auto;
+                    width: 100%;
+                    max-width: 50vmax;
                     line-height: 1.5;
                 }
 
@@ -131,11 +142,12 @@
                 .testimonial {
                     margin: 3em auto auto auto;
                     width: auto;
+                    max-width: 40vmax;
                     text-align: left;
                     padding: 5%;
 
                     p {
-                        font-size: 9pt;
+                        font-size: 8.5pt;
                         line-height: 1.8;
                         margin: 0;
                         width: 100%;

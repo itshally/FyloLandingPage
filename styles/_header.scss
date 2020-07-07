@@ -60,8 +60,17 @@
     }
 }
 
-
-@media screen and (min-width: 1440px) {}
+@media only screen and (width: 768px){
+    .header{
+        .container{
+            .col-left{
+                h1{
+                    font-size: 18pt;
+                }
+            }
+        }
+    }
+}
 
 @media screen and (max-width: 375px),
 (max-width: 640px) {
