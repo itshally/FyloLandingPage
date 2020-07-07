@@ -20,7 +20,7 @@
 @mixin sectionHeading {
     @include fontStyle($headingFontFamily, $fontWeight700);
     line-height: 1.5;
-    font-size: 2.5em;
+    font-size: 2em;
     font-size-adjust: initial;
     color: $veryDarkBlue;
     margin: auto;
