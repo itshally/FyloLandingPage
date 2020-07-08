@@ -1,2 +1,11 @@
 .DS_Store
 style-guide.md
+styles/_footer.scss
+styles/_header.scss
+styles/_mixin.scss
+styles/_nav.scss
+styles/_section.scss
+styles/_subscription.scss
+styles/_variables.scss
+styles/_style.scss
+styles/_styles.css.map
