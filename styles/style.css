@@ -304,7 +304,7 @@
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   line-height: 1.5;
-  width: 80%;
+  width: 75%;
 }
 
 .section .container .col-left .link {
@@ -319,22 +319,22 @@
 }
 
 .section .container .col-left .testimonial {
-  width: auto;
-  min-width: 25vmax;
-  max-width: 20vmax;
-  padding: 3.5% 5%;
+  width: 40%;
+  max-width: 40vmax;
+  padding: 3.5%;
   margin-top: 5%;
   background-color: #ffffff;
   border-radius: 5px;
-  -webkit-box-shadow: 0px 0px 15px -10px #585989;
-  box-shadow: 0px 0px 15px -10px #585989;
+  -webkit-box-shadow: 0px 0px 15px -9px #585989;
+  box-shadow: 0px 0px 15px -9px #585989;
 }
 
 .section .container .col-left .testimonial p {
   font-size: 10pt;
-  line-height: 2;
+  line-height: 1.8;
   margin: 0;
-  width: auto;
+  padding: 0;
+  width: 100%;
 }
 
 .section .container .col-left .testimonial .author {
@@ -375,7 +375,7 @@
   width: 100%;
   max-width: 50vmax;
   width: 100%;
-  max-width: 35vmax;
+  max-width: 32.5vmax;
 }
 
 .section .container .col-right .illustrators {
@@ -473,6 +473,7 @@
       align-self: center;
   width: 100%;
   max-width: 50vmax;
+  padding-right: 5rem;
 }
 
 .subscription .container .col-left h3 {
@@ -503,6 +504,7 @@
       align-self: center;
   width: 100%;
   max-width: 50vmax;
+  padding-left: 5rem;
 }
 
 .subscription .container .col-right input[type=email] {
