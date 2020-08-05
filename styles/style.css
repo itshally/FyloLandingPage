@@ -640,6 +640,10 @@
   justify-content: space-between;
 }
 
+.footer .container span {
+  text-decoration: none;
+}
+
 .footer .container .footer-logo img {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
