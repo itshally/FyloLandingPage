@@ -242,6 +242,8 @@
   .header .container .col-left .header-email input[type=submit] {
     width: auto;
     margin-left: 0;
+    -moz-appearance: none;
+    -webkit-appearance: none;
   }
   .header .container .col-right {
     -webkit-box-flex: 1;
@@ -514,6 +516,8 @@
   border: 1px solid #070439;
   border-radius: 2.5px;
   margin-bottom: 10px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
 }
 
 .subscription .container .col-right input::-webkit-input-placeholder {
