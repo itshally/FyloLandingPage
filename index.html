@@ -29,6 +29,8 @@
       color: hsl(228, 45%, 44%);
     }
   </style>
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -50,7 +52,7 @@
   <!-- header part -->
   <div class="header">
     <div class="container">
-      <div class="col-left">
+      <div class="col-left" data-aos="fade-right" data-aos-delay="350">
         <h1>All your files in one secure location, accessible anywhere.</h1>
         <p>
           Fylo stores your most important files in one secure location.
@@ -64,7 +66,7 @@
         </div>
       </div>
   
-      <div class="col-right">
+      <div class="col-right" data-aos="fade-left" data-aos-delay="350">
         <img src="./images/illustration-1.svg" class="illustrators" alt="">
       </div>
     </div>
@@ -106,7 +108,7 @@
         </div>
       </div>
 
-      <div class="col-right">
+      <div class="col-right" data-aos="flip-right" data-aos-delay="350">
         <img src="./images/illustration-2.svg" class="illustrators" alt="">
       </div>
     </div>
@@ -114,7 +116,7 @@
 
   <!-- section 2 -->
   <div class="subscription">
-    <div class="container">
+    <div class="container" data-aos="zoom-in" data-aos-delay="350">
       <div class="col-left">
         <h3>Get early access today</h3>
         <p>
@@ -166,5 +168,11 @@
   </footer>
 
 </body>
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    once: true,
+    anchorPlacement: 'top-bottom'
+  });
+</script>
 </html>
